@@ -1,0 +1,132 @@
+/*Author: Du Zewei HW_2 section_1
+	         The page is about my understanding of XHTML and CSS for layout, positioning, and the CSS box model. The content describes a movie review web page.
+*/
+body {
+	background-image: url("images/background.png");
+	background-repeat: repeat;
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+
+}
+
+#top {
+	background-image: url("images/bannerbackground.png");
+	background-repeat: repeat-x;
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-top: -8px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+#content {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px gray solid;
+	overflow: hidden;
+}
+
+#right {
+	float: right;
+	width: 250px;
+    background-color: #A2B964;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+
+#right dl {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#right dl dt {
+	font-weight: bold;
+}
+
+#right dl dd {
+	margin-bottom: 1em;
+}
+
+#left {
+	width: 550px;
+}
+
+#lefttop {
+	background-image: url("images/rottenbackground.png");
+	background-repeat: repeat-x;
+}
+
+#lefttop32 {
+	font-size: 48pt;
+	color: red;
+	font-weight: bold;
+}
+
+#lefttop88 {
+	font-size: 8pt;
+	color: white;
+}
+
+#lefttop img {
+	vertical-align: bottom;
+}
+
+.column {
+	width: 47%;
+	padding-left: 2%;
+	vertical-align: top;
+	float: left;
+}
+
+.columnp1 {
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: #E1D697;
+	border: 2px solid gray;
+	padding: 8px;
+	overflow: hidden;
+	word-break:keep-all;
+	margin-right: 0px;
+}
+
+.columnp2 {
+	overflow: hidden;
+	margin-bottom: 3em;
+	margin-right: 0px;
+}
+
+.xx {
+	font-style: italic;
+}
+
+.column p img {
+	float: left;
+	margin-right: 5px;
+	vertical-align: bottom;
+}
+
+
+
+#bottom {
+	text-align: center;
+	background-color: #A2B964;
+	clear: both;
+}
+
+#bottom p {
+	padding: 5px;
+	margin-bottom: 0px;
+}
+
+#img2 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
