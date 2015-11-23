@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="calculator.ico" type ="image/gif" rel="shortcut icon" media="screen" />
+</head>
+<body>
+    <div id="all">
+    	<h1>Calculator</h1>
+    	<div id="part">
+    		<input id="result" value="" readonly="readonly"/>
+    		<ul> <!--按键应该使用button -->
+    			<li><input class="litext fuhao" type="button" value="(" /></li>
+    			<li><input class="litext fuhao" type="button" value=")" /></li>
+    			<li><input class="litext fuhao" type="button" value="CE" /></li>
+    			<li><input class="litext fuhao" type="button" value="←" /></li>
+    	    </ul>
+    	    <ul>
+                <li><input class="litext shuzi" type="button" value="7" /></li>
+                <li><input class="litext shuzi" type="button" value="8" /></li>
+                <li><input class="litext shuzi" type="button" value="9" /></li>
+                <li><input class="litext fuhao" type="button" value="/" /></li>
+            </ul>
+            <ul>
+                <li><input class="litext shuzi" type="button" value="4" /></li>
+                <li><input class="litext shuzi" type="button" value="5" /></li>
+                <li><input class="litext shuzi" type="button" value="6" /></li>
+                <li><input class="litext fuhao" type="button" value="*" /></li>
+            </ul>
+            <ul>
+                <li><input class="litext shuzi" type="button" value="1" /></li>
+                <li><input class="litext shuzi" type="button" value="2" /></li>
+                <li><input class="litext shuzi" type="button" value="3" /></li>
+                <li><input class="litext fuhao" type="button" value="-" /></li>
+            </ul>
+            <ul>
+                <li><input class="litext shuzi" type="button" value="0" /></li>
+                <li><input class="litext shuzi" type="button" value="." /></li>
+                <li><input class="litext denghao" type="button" value="=" /></li>
+                <li><input class="litext fuhao" type="button" value="+" /></li>
+    		</ul>
+    	</div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <!--script标签放在body尾部，利于浏览器更快地加载页面，同时DOM加载完毕再运行js代码更安全-->
+</body>
+</html>
