@@ -1,0 +1,52 @@
+body {
+  background-image: url(../images/a.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+#all {
+  width: 375px;
+  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+}
+#all1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 202px;
+  height: 250px;
+}
+h1 {
+  text-align: center;
+}
+.reminder {
+  visibility: hidden;
+  position: relative;
+  left: 20px;
+  color: red;
+  font-size: 0.8em;
+}
+input {
+  width: 374px;
+  height: 27px;
+}
+button {
+  position: relative;
+  left: 142px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.fail {
+  color: red;
+  text-align: center;
+  font-size: 0.8em;
+  position: relative;
+  top: 56px;
+}
+.success {
+  margin-top: 10px;
+  margin-left: 25px;
+}
