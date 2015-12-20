@@ -1,0 +1,218 @@
+/*the "at" icon*/
+.apb {
+	z-index: 2;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background-color: rgba(151, 156, 210, 1);
+	top: 0;
+	left: 0;
+	border-radius: 12.5px;
+	cursor: pointer;
+}
+.icon {
+	z-index: 2;
+	width: 25px;
+	height: 25px;
+	background-image: url(assets/images/atplus_white.png);
+	background-position: 50% 50%;
+	background-size: 90% 64%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+}
+
+.apb, .icon {
+	transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+
+	transition-delay: 0.1s;
+	-moz-transition-delay: 0.1s; /* Firefox 4 */
+	-webkit-transition-delay: 0.1s; /* Safari 和 Chrome */
+	-o-transition-delay: 0.1s; /* Opera */
+}
+
+#at-plus-container:hover .icon, #button, #at-plus-container:hover .apb, .button, .unread, .info {
+	transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+}
+
+#at-plus-container:hover .icon{
+	background-image: url(assets/images/atplus_green.png);
+	background-size: 70% 52%;
+	width: 52px;
+	height: 52px;
+	background-repeat: no-repeat;
+	}
+
+/*the outest div*/
+#button {
+	z-index: 2;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 12.5px;
+	font-family: Arial;
+}
+
+#at-plus-container:hover .apb {
+	position: absolute;
+	top: 9px;/*top: -12 left: -17*/
+	left: -1px;
+	width: 52px;
+	height: 52px;
+	border-radius: 26px;
+	background-color: rgba(48, 63, 159, 1);
+}
+
+li {
+	display: inline-block;
+}
+
+/*before change*/
+.button {
+	z-index: 1;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: rgba(255, 255, 255, 0);
+	border-radius: 12.5px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+/*change small button*/
+#at-plus-container:hover .button {
+	width: 32px;
+	height: 32px;
+	top: 100px;
+	left: 50px;
+	border-radius: 50px;
+	background-color: rgba(48, 63, 159, 1);
+	color: rgba(85, 189, 147, 1);
+}
+
+#at-plus-container:hover .mask{
+	position: absolute;
+ 	top: -23px;
+ 	left: -52px;
+  }
+
+#at-plus-container:hover .history {
+ 	position: absolute;
+ 	top: 13px;
+ 	left: -67px;
+ }
+
+#at-plus-container:hover .message{
+ 	position: absolute;
+ 	top: 53px;
+ 	left: -49px;
+ }
+
+.unread {
+	width: 17px;
+	height: 17px;
+	border-radius: 10px; 
+	position: absolute;
+	top: 0;
+	left: 20px;
+	background-color: rgba(253, 54, 52, 0);
+	color: rgba(255, 255, 255, 0);
+	line-height: 18px;
+	font-size: 10pt;
+}
+
+#at-plus-container:hover .unread {
+	background-color: rgba(253, 54, 52, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+#at-plus-container:hover .setting {
+ 	position: absolute;
+ 	top: 80px;
+ 	left: -17px;
+ }
+
+#at-plus-container:hover .sign {
+	position: absolute;
+	top: 74px;
+	left: 25px;
+}
+
+.info {
+	z-index: 1;
+	visibility: hidden;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(126, 126, 126, 0);
+	font-size: 30pt;
+	font-weight: bold;
+}
+
+
+/*调大圈*/
+#at-plus-container:hover .info {
+	visibility:visible;
+	width: 125px;
+	height: 125px;
+	border-radius: 100px;
+	background-color: rgba(126, 126, 126, 1);
+	color: rgba(100, 214, 169, 1);
+	position: absolute;
+	top: -142px;
+	left: -43px;
+	line-height: 130px;
+	text-align: center;
+}
+
+#at-plus-container {
+	position: absolute;
+	top: 500px;
+	left: 700px;
+	width: 25px;
+	height: 25px;
+	transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+}
+
+#at-plus-container:hover {
+	width: 100px;
+	height: 200px;
+	top: 375px;
+	left: 630px;
+}
+
+#at-plus-container:hover #button{
+	top: 100px;
+	left: 50px;
+}
+
+.disable {
+	background-color: gray !important;
+	color: white !important;
+}
+
+.enable {
+	background-color: rgba(48, 63, 159, 1) !important;
+	color: rgba(85, 189, 147, 1) !important;
+}
+
+.click {
+	background-color: gray !important;
+}
