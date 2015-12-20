@@ -1,7 +1,8 @@
 var Global = {
 	id: new Array("#A", "#B", "#C", "#D", "#E"),
 	success: 0,
-	beclick: 0
+	beclick: 0,
+	reqq: new Array(5)
 };
 
 $(document).ready(function(){
@@ -17,6 +18,7 @@ function HoverOut() {
     	  	for (var i = 0; i < 5; i++) {
 	    		$(Global.id[i]).hide();
 	    		$(Global.id[i]).parent().removeClass('disable enable click');
+	    		if (Global.reqq[i] && Global.reqq[i].readyState != 4) Global.reqq[i].abort();   ////////
     	  	}
 	      	Global.success = 0, Global.beclick = 0;
 	     	$('#info').html('');
@@ -38,7 +40,7 @@ function Click() {
 			    	$(Global.id[i]).show();
 			        $(Global.id[i]).html('...');
 			        Disable($(Global.id[i]).attr("id"));
-			        $.get('/'+random, function(data) {
+			        Global.reqq[i] = $.get('/'+random, function(data) {
 			    	    $(Global.id[i]).html(data);
 			    	    Global.success++;
 			    	    if (Global.success == 5) {
